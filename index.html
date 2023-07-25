@@ -15,6 +15,20 @@
         rel="stylesheet">
     <!-- fonts awesome icons link -->
     <script src="https://kit.fontawesome.com/4d9d7f8e5e.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient-end': '#F00',
+                        'gradient-start': '#FF8938',
+                    }
+                }
+            }
+        }
+    </script>
+
     <!-- styles css -->
     <style>
         .font {
@@ -108,13 +122,15 @@
             <div class=" flex-1 items-center ">
                 <div class="py-7">
                     <h1 class="text-4xl font-extrabold text-black">Great Tea, Freshly Presented</h1>
-                    <p> It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                    <p> It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been
+                        deeply appreciated by its custoers because of good words of mouth and unique customized service
+                        orginated from Taiwan.</p>
                 </div>
                 <div class="py-7">
                     <h1 class="text-2xl font-extrabold text-black">Unique Test</h1>
                     <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
                 </div>
-                
+
                 <div class="py-7">
                     <h1 class="text-2xl font-extrabold text-black">Premium Quality</h1>
                     <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
@@ -123,16 +139,78 @@
             </div>
         </section>
         <!-- super clients -->
-        <section class="my-14 mb-20 p-8  bg-gradient-to-l from-red-800 to-[#FF8938]">
-            <div>
+        <section
+            class="my-14 mb-20 p-8  bg-gradient-to-r from-gradient-start to-gradient-end flex flex-col lg:flex-row">
+            <div class="text-white flex items-center pr-32">
+                <div class="space-y-5">
+                    <h1 class=" font-extrabold text-4xl">Meet Our Super Clients</h1>
+                <p class="font-medium">There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humour, or randomised words which don't look even
+                    slightly believable. </p>
+                <button class="btn bg-white text-red-600">Show All</button>
+                </div>
+            </div>
+            <!-- review container -->
+            <div class="relative">
+                <!-- next review -->
+                <div class="relative z-0 opacity-40 mb-12 rounded-lg bg-white p-10 ">
+
+                    <img class=" absolute -top-5 -left-5 w-14 rounded-full border-4 border-white "
+                        src="./images/client.png" alt="">
+                    <p class="text-gray-600">We are providing the best and suitable home insurance services for the
+                        people who are interested
+                        to treatment</p>
+                    <div class="py-4">
+                        <h1 class="font-bold text-gray-900">Ilham Yuda</h1>
+                        <p class="text-gray-600">Buisnessman</p>
+                    </div>
+                    <div class="flex justify-end">
+                        <img src="./images/circles.png" alt="">
+                    </div>
+                </div>
+                <!-- current review -->
+                <div class="absolute z-10  top-40 lg:-left-20 lg:w-[430px] rounded-lg bg-white p-10 ">
+
+                    <img class=" absolute -top-5 -left-5 w-14 rounded-full border-4 border-white "
+                        src="./images/client.png" alt="">
+                    <p class="text-gray-600">We are providing the best and suitable home insurance services for the
+                        people who are interested
+                        to treatment</p>
+                    <div class="py-4">
+                        <h1 class="font-bold text-gray-900">Ilham Yuda</h1>
+                        <p class="text-gray-600">Buisnessman</p>
+                    </div>
+                    <div class="flex justify-end">
+                        <img src="./images/circles.png" alt="">
+                    </div>
+                </div>
+                <!-- previous review -->
+                <div class="relative z-0 opacity-40 rounded-lg bg-white p-10 ">
+
+                    <img class=" absolute -top-5 -left-5 w-14 rounded-full border-4 border-white "
+                        src="./images/client.png" alt="">
+                    <p class="text-gray-600">We are providing the best and suitable home insurance services for the
+                        people who are interested
+                        to treatment</p>
+                    <div class="py-4">
+                        <h1 class="font-bold text-gray-900">Ilham Yuda</h1>
+                        <p class="text-gray-600">Buisnessman</p>
+                    </div>
+                    <div class="flex justify-end">
+                        <img src="./images/circles.png" alt="">
+                    </div>
+                </div>
 
             </div>
+
         </section>
 
-    <!-- news and events section -->
+        <!-- news and events section -->
         <section>
             <h1 class="text-4xl font-extrabold text-black">News & Events</h1>
-            <p class="text-sm text-gray-500 max-w-4xl p-5 m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            <p class="text-sm text-gray-500 max-w-4xl p-5 m-auto">There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                words which don't look even slightly believable. </p>
 
         </section>
     </main>
